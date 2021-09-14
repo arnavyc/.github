@@ -1,93 +1,123 @@
 - color: d73a4a
   description: ""
   name: breaking
+
 - color: 0025ff
   description: Pull requests that update a dependency file
   name: dependencies
+
 - color: 91ca55
   description: ""
-  name: 'effort: 1'
+  name: "effort: 1"
+
 - color: fbca04
   description: ""
-  name: 'effort: 13'
+  name: "effort: 13"
+
 - color: c2e2a2
   description: ""
-  name: 'effort: 2'
+  name: "effort: 2"
+
 - color: e9f4dc
   description: ""
-  name: 'effort: 3'
+  name: "effort: 3"
+
 - color: fef6d7
   description: ""
-  name: 'effort: 5'
+  name: "effort: 5"
+
 - color: fef2c0
   description: ""
-  name: 'effort: 8'
+  name: "effort: 8"
+
 - color: 7057ff
   description: Good for newcomers
   name: good first issue
+
 - color: 0e8a16
   description: ""
   name: greenkeeper
+
 - color: 0e8a16
   description: Extra attention is needed
   name: help
+
 - color: fbca04
   description: ""
-  name: 'priority: 2day'
+  name: "priority: 2day"
+
 - color: d73a4a
   description: ""
-  name: 'priority: now'
+  name: "priority: now"
+
 - color: ffb8c6
   description: ""
-  name: 'priority: soon'
+  name: "priority: soon"
+
 - color: ffffff
   description: ""
   name: stale
+
 - color: 91ca55
   description: ""
-  name: 'state: approved'
+  name: "state: approved"
+
 - color: d73a4a
   description: ""
-  name: 'state: blocked'
+  name: "state: blocked"
+
 - color: e6e6e6
   description: This issue or pull request already exists
-  name: 'state: duplicate'
+  name: "state: duplicate"
+
 - color: fbca04
   description: ""
-  name: 'state: pending'
+  name: "state: pending"
+
 - color: d73a4a
   description: Something isn't working
-  name: 'type: bug'
+  name: "type: bug"
+
 - color: fef2c0
   description: ""
-  name: 'type: chore'
+  name: "type: chore"
+
 - color: d4c5f9
   description: ""
-  name: 'type: discussion'
+  name: "type: discussion"
+
 - color: fef2c0
   description: ""
-  name: 'type: docs'
+  name: "type: docs"
+
 - color: 5ebeff
   description: New feature or request
-  name: 'type: feature'
+  name: "type: feature"
+
 - color: 91ca55
   description: ""
-  name: 'type: fix'
+  name: "type: fix"
+
 - color: d73a4a
   description: ""
-  name: 'type: security'
+  name: "type: security"
+
 - color: fbca04
   description: ""
-  name: 'type: testing'
+  name: "type: testing"
+
 - color: fbca04
   description: ""
-  name: 'work: chaotic'
+  name: "work: chaotic"
+
 - color: d4c5f9
   description: ""
-  name: 'work: complex'
+  name: "work: complex"
+
 - color: ffb8c6
   description: ""
-  name: 'work: complicated'
+  name: "work: complicated"
+
 - color: 91ca55
   description: ""
-  name: 'work: obvious'
+  name: "work: obvious"
