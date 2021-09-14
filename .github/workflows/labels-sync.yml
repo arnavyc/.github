@@ -31,6 +31,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - run: "echo ${{ steps.get-all-repos-of-user.outputs.repos }}"
+
       - uses: micnncim/action-label-syncer@v1
         with:
           manifest: labels.yml
