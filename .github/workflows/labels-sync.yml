@@ -28,6 +28,8 @@ jobs:
       - name: Get list of all repos of user
         id: get-all-repos-of-user
         run: 'echo ::set-output name=repos::"$(gh repo list --source --no-archived --json url | jq -r ".[]|.url")"'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: micnncim/action-label-syncer@v1
         with:
