@@ -29,7 +29,7 @@ jobs:
         id: get-all-repos-of-user
         run: 'echo ::set-output name=repos::"$(gh repo list --source --no-archived --json url | jq -r ".[]|.url")"'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GPERSONAL_ACCESS_TOKEN }}
 
       - run: "echo ${{ steps.get-all-repos-of-user.outputs.repos }}"
 
@@ -37,4 +37,4 @@ jobs:
         with:
           manifest: labels.yml
           repository: ${{ steps.get-all-repos-of-user.outputs.repos }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
