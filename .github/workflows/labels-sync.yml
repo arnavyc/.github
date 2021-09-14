@@ -27,7 +27,7 @@ jobs:
 
       - name: Get list of all repos of user
         id: get-all-repos-of-user
-        run: 'echo ::set-output name=repos::"$(gh repo list --source --no-archived --json nameWithOwner | jq -r ".[]|.NameWithOwner")"'
+        run: 'echo ::set-output name=repos::"$(gh repo list --source --no-archived --json nameWithOwner | jq -r ".[]|.nameWithOwner")"'
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
