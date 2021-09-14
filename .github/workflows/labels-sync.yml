@@ -2,6 +2,9 @@ name: Sync Labels across all repos of user
 
 on:
   push:
+    paths:
+      - labels.yml
+      - ".github/workflows/labels-sync.yml"
     branches:
       - main
 
