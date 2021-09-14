@@ -27,14 +27,17 @@ jobs:
 
       - name: Get list of all repos of user
         id: get-all-repos-of-user
-        run: 'echo "::set-output name=repos::$(gh repo list --source --no-archived --json nameWithOwner | jq -r ".[]|.nameWithOwner")"'
+        run: |
+          echo 'USER_REPO_LIST<<EOF' >> $GITHUB_ENV
+          gh repo list --source --no-archived --json nameWithOwner | jq -r ".[]|.nameWithOwner" >> $GITHUB_ENV
+          echo EOF >> $GITHUB_ENV
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
-      - run: 'echo "${{ steps.get-all-repos-of-user.outputs.repos }}"'
+      - run: echo "${{ env.USER_REPO_LIST }}"
 
       - uses: micnncim/action-label-syncer@v1
         with:
           manifest: labels.yml
-          repository: ${{ steps.get-all-repos-of-user.outputs.repos }}
+          repository: ${{ env.USER_REPO_LIST }}
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
