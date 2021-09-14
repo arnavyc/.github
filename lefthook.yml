@@ -1,0 +1,14 @@
+# Copyright 2021 arnavyc <arnavyc@outlook.com>
+#
+# SPDX-License-Identifier: 0BSD
+pre-push:
+  packages-audit:
+    tags: security
+    run: npm audit
+
+pre-commit:
+  parallel: true
+  commands:
+    formatter:
+      glob: "*.{css,html,md,mdx,json,json5,yaml,yml}"
+      run: npx prettier -c {staged_files}
