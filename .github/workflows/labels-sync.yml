@@ -23,6 +23,7 @@ jobs:
         run: |
           echo 'USER_REPO_LIST<<EOF' >> $GITHUB_ENV
           gh repo list --source --no-archived --json nameWithOwner | jq -r ".[]|.nameWithOwner" >> $GITHUB_ENV
+          echo '${{ github.repository }}' >> $GITHUB_ENV
           echo EOF >> $GITHUB_ENV
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
