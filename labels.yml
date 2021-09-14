@@ -51,7 +51,7 @@
   name: 'state: blocked'
 - color: e6e6e6
   description: This issue or pull request already exists
-  name: 'state: inactive'
+  name: 'state: duplicate'
 - color: fbca04
   description: ""
   name: 'state: pending'
