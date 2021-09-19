@@ -13,6 +13,6 @@
   "license": "0BSD",
   "devDependencies": {
     "@arkweid/lefthook": "0.7.6",
-    "prettier": "2.4.0"
+    "prettier": "2.4.1"
   }
 }
